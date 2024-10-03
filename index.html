@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Search</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .header {
+            width: 100%;
+            background-color: #A7C7E7;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .header img {
+            height: 50px;
+            vertical-align: middle;
+        }
+        .header h1 {
+            display: inline;
+            margin-left: 10px;
+            font-size: 24px;
+        }
+        .search-container {
+            margin: 20px 0;
+            width: 80%;
+            max-width: 600px;
+            display: flex;
+            justify-content: center;
+        }
+        .search-container input {
+            width: 80%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .search-container button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+        .search-container button:hover {
+            background-color: #45a049;
+        }
+        .results {
+            width: 80%;
+            max-width: 600px;
+        }
+        .project-section {
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 0.5s;
+        }
+        .project-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .result {
+            border-top: 1px solid #ccc;
+            padding: 10px 0;
+        }
+        .result:first-child {
+            border-top: none;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .loading {
+            display: none;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="https://devxidp.com/28495a65e51c515f7b4a.png" alt="Logo">
+        <h1>API Search</h1>
+    </div>
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Type to search...">
+        <button onclick="search()">Search</button>
+    </div>
+    <div class="loading">
+        <img src="https://i.gifer.com/ZZ5H.gif" alt="Loading" width="50">
+    </div>
+    <div class="results" id="results"></div>
+
+    <script>
+        async function search() {
+            const query = document.getElementById('search-input').value;
+            const loading = document.querySelector('.loading');
+            const resultsContainer = document.getElementById('results');
+            resultsContainer.innerHTML = '';
+            loading.style.display = 'block';
+
+            const response = await fetch('/search', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ query })
+            });
+            const results = await response.json();
+            loading.style.display = 'none';
+            displayResults(results);
+        }
+
+        function displayResults(results) {
+            const resultsContainer = document.getElementById('results');
+            resultsContainer.innerHTML = '';
+
+            const groupedResults = results.reduce((acc, result) => {
+                if (!acc[result.project]) {
+                    acc[result.project] = [];
+                }
+                acc[result.project].push(result);
+                return acc;
+            }, {});
+
+            for (const [project, apis] of Object.entries(groupedResults)) {
+                const projectSection = document.createElement('div');
+                projectSection.className = 'project-section';
+
+                const projectTitle = document.createElement('div');
+                projectTitle.className = 'project-title';
+                projectTitle.textContent = project;
+                projectSection.appendChild(projectTitle);
+
+                apis.forEach(api => {
+                    const resultDiv = document.createElement('div');
+                    resultDiv.className = 'result';
+                    resultDiv.innerHTML = `
+                        <p><strong>ID:</strong> ${api._id}</p>
+                        <p><strong>Method:</strong> ${api.api_method}</p>
+                        <p><strong>Description:</strong> ${api.description}</p>
+                        <p><strong>Title:</strong> ${api.title}</p>
+                        <p><strong>Similarity:</strong> ${api.$similarity}</p>
+                    `;
+                    projectSection.appendChild(resultDiv);
+                });
+
+                resultsContainer.appendChild(projectSection);
+            }
+        }
+    </script>
+</body>
+</html>

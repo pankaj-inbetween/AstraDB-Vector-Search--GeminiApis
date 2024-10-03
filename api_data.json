@@ -1,0 +1,962 @@
+[
+    {
+        "id": "API-001-001",
+        "api_name": "Get Current Weather",
+        "description": "Retrieve real-time weather data for a specific location.",
+        "api_method": "GET",
+        "owner_project": "Weather API",
+        "owner_project_ID": "API-001"
+    },
+    {
+        "id": "API-001-002",
+        "api_name": "Get Weather Forecast",
+        "description": "Retrieve weather forecast data for the next 7 days for a specific location.",
+        "api_method": "GET",
+        "owner_project": "Weather API",
+        "owner_project_ID": "API-001"
+    },
+    {
+        "id": "API-001-003",
+        "api_name": "Get Historical Weather",
+        "description": "Retrieve historical weather data for a specific location.",
+        "api_method": "GET",
+        "owner_project": "Weather API",
+        "owner_project_ID": "API-001"
+    },
+    {
+        "id": "API-002-001",
+        "api_name": "Get Product Catalog",
+        "description": "Retrieve a list of products available in the online store.",
+        "api_method": "GET",
+        "owner_project": "E-commerce API",
+        "owner_project_ID": "API-002"
+    },
+    {
+        "id": "API-002-002",
+        "api_name": "Add to Cart",
+        "description": "Add a product to the shopping cart.",
+        "api_method": "POST",
+        "owner_project": "E-commerce API",
+        "owner_project_ID": "API-002"
+    },
+    {
+        "id": "API-002-003",
+        "api_name": "Process Order",
+        "description": "Process an order and initiate payment.",
+        "api_method": "POST",
+        "owner_project": "E-commerce API",
+        "owner_project_ID": "API-002"
+    },
+    {
+        "id": "API-003-001",
+        "api_name": "User Registration",
+        "description": "Register a new user for the social media platform.",
+        "api_method": "POST",
+        "owner_project": "Social Media API",
+        "owner_project_ID": "API-003"
+    },
+    {
+        "id": "API-003-002",
+        "api_name": "Add Friend",
+        "description": "Send a friend request to another user.",
+        "api_method": "POST",
+        "owner_project": "Social Media API",
+        "owner_project_ID": "API-003"
+    },
+    {
+        "id": "API-003-003",
+        "api_name": "Post Content",
+        "description": "Share content on the user's timeline.",
+        "api_method": "POST",
+        "owner_project": "Social Media API",
+        "owner_project_ID": "API-003"
+    },
+    {
+        "id": "API-004-001",
+        "api_name": "Search Flights",
+        "description": "Search for available flights based on criteria.",
+        "api_method": "GET",
+        "owner_project": "Travel API",
+        "owner_project_ID": "API-004"
+    },
+    {
+        "id": "API-004-002",
+        "api_name": "Book Hotel",
+        "description": "Make a hotel reservation.",
+        "api_method": "POST",
+        "owner_project": "Travel API",
+        "owner_project_ID": "API-004"
+    },
+    {
+        "id": "API-004-003",
+        "api_name": "Rent Car",
+        "description": "Reserve a rental car.",
+        "api_method": "POST",
+        "owner_project": "Travel API",
+        "owner_project_ID": "API-004"
+    },
+    {
+        "id": "API-005-001",
+        "api_name": "Check Account Balance",
+        "description": "Retrieve the current balance of a bank account.",
+        "api_method": "GET",
+        "owner_project": "Banking API",
+        "owner_project_ID": "API-005"
+    },
+    {
+        "id": "API-005-002",
+        "api_name": "Transfer Funds",
+        "description": "Transfer funds between accounts.",
+        "api_method": "POST",
+        "owner_project": "Banking API",
+        "owner_project_ID": "API-005"
+    },
+    {
+        "id": "API-005-003",
+        "api_name": "Apply for Loan",
+        "description": "Submit a loan application.",
+        "api_method": "POST",
+        "owner_project": "Banking API",
+        "owner_project_ID": "API-005"
+    },
+    {
+        "id": "API-006-001",
+        "api_name": "Get Patient Records",
+        "description": "Retrieve patient medical records.",
+        "api_method": "GET",
+        "owner_project": "Healthcare API",
+        "owner_project_ID": "API-006"
+    },
+    {
+        "id": "API-006-002",
+        "api_name": "Schedule Appointment",
+        "description": "Schedule a medical appointment.",
+        "api_method": "POST",
+        "owner_project": "Healthcare API",
+        "owner_project_ID": "API-006"
+    },
+    {
+        "id": "API-006-003",
+        "api_name": "Submit Prescription",
+        "description": "Submit an electronic prescription.",
+        "api_method": "POST",
+        "owner_project": "Healthcare API",
+        "owner_project_ID": "API-006"
+    },
+    {
+        "id": "API-007-001",
+        "api_name": "Start Game Server",
+        "description": "Initialize a new game server.",
+        "api_method": "POST",
+        "owner_project": "Gaming API",
+        "owner_project_ID": "API-007"
+    },
+    {
+        "id": "API-007-002",
+        "api_name": "Matchmaking",
+        "description": "Find and connect players for a game session.",
+        "api_method": "POST",
+        "owner_project": "Gaming API",
+        "owner_project_ID": "API-007"
+    },
+    {
+        "id": "API-007-003",
+        "api_name": "Get Leaderboards",
+        "description": "Retrieve the current game leaderboards.",
+        "api_method": "GET",
+        "owner_project": "Gaming API",
+        "owner_project_ID": "API-007"
+    },
+    {
+        "id": "API-008-001",
+        "api_name": "Search Songs",
+        "description": "Search for songs in the music database.",
+        "api_method": "GET",
+        "owner_project": "Music API",
+        "owner_project_ID": "API-008"
+    },
+    {
+        "id": "API-008-002",
+        "api_name": "Create Playlist",
+        "description": "Create a new music playlist.",
+        "api_method": "POST",
+        "owner_project": "Music API",
+        "owner_project_ID": "API-008"
+    },
+    {
+        "id": "API-008-003",
+        "api_name": "Get Artist Info",
+        "description": "Retrieve information about a specific artist.",
+        "api_method": "GET",
+        "owner_project": "Music API",
+        "owner_project_ID": "API-008"
+    },
+    {
+        "id": "API-009-001",
+        "api_name": "Enroll in Course",
+        "description": "Enroll a student in a course.",
+        "api_method": "POST",
+        "owner_project": "Education API",
+        "owner_project_ID": "API-009"
+    },
+    {
+        "id": "API-009-002",
+        "api_name": "Get Course Content",
+        "description": "Retrieve the content of a specific course.",
+        "api_method": "GET",
+        "owner_project": "Education API",
+        "owner_project_ID": "API-009"
+    },
+    {
+        "id": "API-009-003",
+        "api_name": "Submit Quiz",
+        "description": "Submit answers for a quiz.",
+        "api_method": "POST",
+        "owner_project": "Education API",
+        "owner_project_ID": "API-009"
+    },
+    {
+        "id": "API-100-001",
+        "api_name": "Get Restaurant Listings",
+        "description": "Retrieve a list of restaurants available for delivery.",
+        "api_method": "GET",
+        "owner_project": "Food Delivery API",
+        "owner_project_ID": "API-100"
+    },
+    {
+        "id": "API-100-002",
+        "api_name": "Place Order",
+        "description": "Place a food delivery order.",
+        "api_method": "POST",
+        "owner_project": "Food Delivery API",
+        "owner_project_ID": "API-100"
+    },
+    {
+        "id": "API-100-003",
+        "api_name": "Track Delivery",
+        "description": "Track the status of a food delivery order.",
+        "api_method": "GET",
+        "owner_project": "Food Delivery API",
+        "owner_project_ID": "API-100"
+    },
+    {
+        "id": "API-101-001",
+        "api_name": "Search Properties",
+        "description": "Search for real estate properties based on criteria.",
+        "api_method": "GET",
+        "owner_project": "Real Estate API",
+        "owner_project_ID": "API-101"
+    },
+    {
+        "id": "API-101-002",
+        "api_name": "Get Property Details",
+        "description": "Retrieve detailed information about a specific property.",
+        "api_method": "GET",
+        "owner_project": "Real Estate API",
+        "owner_project_ID": "API-101"
+    },
+    {
+        "id": "API-101-003",
+        "api_name": "Submit Offer",
+        "description": "Submit an offer for a property.",
+        "api_method": "POST",
+        "owner_project": "Real Estate API",
+        "owner_project_ID": "API-101"
+    },
+    {
+        "id": "API-102-001",
+        "api_name": "Get Cryptocurrency Prices",
+        "description": "Retrieve current prices of various cryptocurrencies.",
+        "api_method": "GET",
+        "owner_project": "Cryptocurrency API",
+        "owner_project_ID": "API-102"
+    },
+    {
+        "id": "API-102-002",
+        "api_name": "Execute Trade",
+        "description": "Execute a trade for a specific cryptocurrency.",
+        "api_method": "POST",
+        "owner_project": "Cryptocurrency API",
+        "owner_project_ID": "API-102"
+    },
+    {
+        "id": "API-102-003",
+        "api_name": "Manage Wallet",
+        "description": "Manage a cryptocurrency wallet, including deposits and withdrawals.",
+        "api_method": "POST",
+        "owner_project": "Cryptocurrency API",
+        "owner_project_ID": "API-102"
+    },
+    {
+        "id": "API-103-001",
+        "api_name": "Connect Device",
+        "description": "Connect a new IoT device to the network.",
+        "api_method": "POST",
+        "owner_project": "IoT API",
+        "owner_project_ID": "API-103"
+    },
+    {
+        "id": "API-103-002",
+        "api_name": "Get Device Status",
+        "description": "Retrieve the current status of a connected IoT device.",
+        "api_method": "GET",
+        "owner_project": "IoT API",
+        "owner_project_ID": "API-103"
+    },
+    {
+        "id": "API-103-003",
+        "api_name": "Control Device",
+        "description": "Send control commands to an IoT device.",
+        "api_method": "POST",
+        "owner_project": "IoT API",
+        "owner_project_ID": "API-103"
+    },
+    {
+        "id": "API-104-001",
+        "api_name": "Get Sports Scores",
+        "description": "Retrieve live scores for ongoing sports events.",
+        "api_method": "GET",
+        "owner_project": "Sports API",
+        "owner_project_ID": "API-104"
+    },
+    {
+        "id": "API-104-002",
+        "api_name": "Get Sports Schedules",
+        "description": "Retrieve schedules for upcoming sports events.",
+        "api_method": "GET",
+        "owner_project": "Sports API",
+        "owner_project_ID": "API-104"
+    },
+    {
+        "id": "API-104-003",
+        "api_name": "Get Player Statistics",
+        "description": "Retrieve statistics for a specific player.",
+        "api_method": "GET",
+        "owner_project": "Sports API",
+        "owner_project_ID": "API-104"
+    },
+    {
+        "id": "API-105-001",
+        "api_name": "Get Vehicle Diagnostics",
+        "description": "Retrieve diagnostic information for a vehicle.",
+        "api_method": "GET",
+        "owner_project": "Automotive API",
+        "owner_project_ID": "API-105"
+    },
+    {
+        "id": "API-105-002",
+        "api_name": "Remote Control Vehicle",
+        "description": "Send remote control commands to a vehicle.",
+        "api_method": "POST",
+        "owner_project": "Automotive API",
+        "owner_project_ID": "API-105"
+    },
+    {
+        "id": "API-105-003",
+        "api_name": "Get Navigation Data",
+        "description": "Retrieve navigation data for a vehicle.",
+        "api_method": "GET",
+        "owner_project": "Automotive API",
+        "owner_project_ID": "API-105"
+    },
+    {
+        "id": "API-106-001",
+        "api_name": "Apply for Permit",
+        "description": "Submit an application for a government permit.",
+        "api_method": "POST",
+        "owner_project": "Government API",
+        "owner_project_ID": "API-106"
+    },
+    {
+        "id": "API-106-002",
+        "api_name": "Get Public Records",
+        "description": "Retrieve public records from government databases.",
+        "api_method": "GET",
+        "owner_project": "Government API",
+        "owner_project_ID": "API-106"
+    },
+    {
+        "id": "API-106-003",
+        "api_name": "Renew License",
+        "description": "Renew a government-issued license.",
+        "api_method": "POST",
+        "owner_project": "Government API",
+        "owner_project_ID": "API-106"
+    },
+    {
+        "id": "API-107-001",
+        "api_name": "Create Shipment",
+        "description": "Create a new shipment order.",
+        "api_method": "POST",
+        "owner_project": "Logistics API",
+        "owner_project_ID": "API-107"
+    },
+    {
+        "id": "API-107-002",
+        "api_name": "Track Shipment",
+        "description": "Track the status of an existing shipment.",
+        "api_method": "GET",
+        "owner_project": "Logistics API",
+        "owner_project_ID": "API-107"
+    },
+    {
+        "id": "API-107-003",
+        "api_name": "Update Delivery Status",
+        "description": "Update the delivery status of a shipment.",
+        "api_method": "PUT",
+        "owner_project": "Logistics API",
+        "owner_project_ID": "API-107"
+    },
+    {
+        "id": "API-108-001",
+        "api_name": "Get Agricultural Data",
+        "description": "Retrieve data related to agricultural activities.",
+        "api_method": "GET",
+        "owner_project": "Agriculture API",
+        "owner_project_ID": "API-108"
+    },
+    {
+        "id": "API-108-002",
+        "api_name": "Get Weather Forecast for Agriculture",
+        "description": "Retrieve weather forecast data specific to agricultural needs.",
+        "api_method": "GET",
+        "owner_project": "Agriculture API",
+        "owner_project_ID": "API-108"
+    },
+    {
+        "id": "API-108-003",
+        "api_name": "Get Market Information",
+        "description": "Retrieve market information for agricultural products.",
+        "api_method": "GET",
+        "owner_project": "Agriculture API",
+        "owner_project_ID": "API-108"
+    },
+    {
+        "id": "API-109-001",
+        "api_name": "Manage Inventory",
+        "description": "Manage inventory levels for retail products.",
+        "api_method": "POST",
+        "owner_project": "Retail API",
+        "owner_project_ID": "API-109"
+    },
+    {
+        "id": "API-109-002",
+        "api_name": "Get Customer Loyalty Programs",
+        "description": "Retrieve information about customer loyalty programs.",
+        "api_method": "GET",
+        "owner_project": "Retail API",
+        "owner_project_ID": "API-109"
+    },
+    {
+        "id": "API-109-003",
+        "api_name": "Apply Promotions",
+        "description": "Apply promotional discounts to retail products.",
+        "api_method": "POST",
+        "owner_project": "Retail API",
+        "owner_project_ID": "API-109"
+    },
+    {
+        "id": "API-110-001",
+        "api_name": "Get Energy Consumption",
+        "description": "Retrieve data on energy consumption.",
+        "api_method": "GET",
+        "owner_project": "Energy API",
+        "owner_project_ID": "API-110"
+    },
+    {
+        "id": "API-110-002",
+        "api_name": "Get Renewable Energy Sources",
+        "description": "Retrieve information about renewable energy sources.",
+        "api_method": "GET",
+        "owner_project": "Energy API",
+        "owner_project_ID": "API-110"
+    },
+    {
+        "id": "API-110-003",
+        "api_name": "Get Energy Efficiency Metrics",
+        "description": "Retrieve metrics related to energy efficiency.",
+        "api_method": "GET",
+        "owner_project": "Energy API",
+        "owner_project_ID": "API-110"
+    },
+    {
+        "id": "API-111-001",
+        "api_name": "Create User Profile",
+        "description": "Create a new user profile on the social networking platform.",
+        "api_method": "POST",
+        "owner_project": "Social Networking API",
+        "owner_project_ID": "API-111"
+    },
+    {
+        "id": "API-111-002",
+        "api_name": "Send Friend Request",
+        "description": "Send a friend request to another user.",
+        "api_method": "POST",
+        "owner_project": "Social Networking API",
+        "owner_project_ID": "API-111"
+    },
+    {
+        "id": "API-111-003",
+        "api_name": "Send Message",
+        "description": "Send a message to another user.",
+        "api_method": "POST",
+        "owner_project": "Social Networking API",
+        "owner_project_ID": "API-111"
+    },
+    {
+        "id": "API-112-001",
+        "api_name": "Manage Customer Interactions",
+        "description": "Manage interactions with customers.",
+        "api_method": "POST",
+        "owner_project": "Customer Relationship Management (CRM) API",
+        "owner_project_ID": "API-112"
+    },
+    {
+        "id": "API-112-002",
+        "api_name": "Track Sales",
+        "description": "Track sales activities and performance.",
+        "api_method": "GET",
+        "owner_project": "Customer Relationship Management (CRM) API",
+        "owner_project_ID": "API-112"
+    },
+    {
+        "id": "API-112-003",
+        "api_name": "Manage Marketing Campaigns",
+        "description": "Manage marketing campaigns and track their effectiveness.",
+        "api_method": "POST",
+        "owner_project": "Customer Relationship Management (CRM) API",
+        "owner_project_ID": "API-112"
+    },
+    {
+        "id": "API-113-001",
+        "api_name": "Upload Video",
+        "description": "Upload a new video for streaming.",
+        "api_method": "POST",
+        "owner_project": "Video Streaming API",
+        "owner_project_ID": "API-113"
+    },
+    {
+        "id": "API-113-002",
+        "api_name": "Get Video Stream",
+        "description": "Retrieve a video stream for playback.",
+        "api_method": "GET",
+        "owner_project": "Video Streaming API",
+        "owner_project_ID": "API-113"
+    },
+    {
+        "id": "API-113-003",
+        "api_name": "Get Video Analytics",
+        "description": "Retrieve analytics data for a specific video.",
+        "api_method": "GET",
+        "owner_project": "Video Streaming API",
+        "owner_project_ID": "API-113"
+    },
+    {
+        "id": "API-114-001",
+        "api_name": "Upload File",
+        "description": "Upload a file to cloud storage.",
+        "api_method": "POST",
+        "owner_project": "Cloud Storage API",
+        "owner_project_ID": "API-114"
+    },
+    {
+        "id": "API-114-002",
+        "api_name": "Download File",
+        "description": "Download a file from cloud storage.",
+        "api_method": "GET",
+        "owner_project": "Cloud Storage API",
+        "owner_project_ID": "API-114"
+    },
+    {
+        "id": "API-114-003",
+        "api_name": "Delete File",
+        "description": "Delete a file from cloud storage.",
+        "api_method": "DELETE",
+        "owner_project": "Cloud Storage API",
+        "owner_project_ID": "API-114"
+    },
+    {
+        "id": "API-115-001",
+        "api_name": "Train Model",
+        "description": "Train a new machine learning model.",
+        "api_method": "POST",
+        "owner_project": "Machine Learning API",
+        "owner_project_ID": "API-115"
+    },
+    {
+        "id": "API-115-002",
+        "api_name": "Get Model Predictions",
+        "description": "Retrieve predictions from a trained machine learning model.",
+        "api_method": "POST",
+        "owner_project": "Machine Learning API",
+        "owner_project_ID": "API-115"
+    },
+    {
+        "id": "API-115-003",
+        "api_name": "Evaluate Model",
+        "description": "Evaluate the performance of a machine learning model.",
+        "api_method": "POST",
+        "owner_project": "Machine Learning API",
+        "owner_project_ID": "API-115"
+    },
+    {
+        "id": "API-116-001",
+        "api_name": "Natural Language Processing",
+        "description": "Perform natural language processing on text data.",
+        "api_method": "POST",
+        "owner_project": "Artificial Intelligence API",
+        "owner_project_ID": "API-116"
+    },
+    {
+        "id": "API-116-002",
+        "api_name": "Image Recognition",
+        "description": "Perform image recognition on image data.",
+        "api_method": "POST",
+        "owner_project": "Artificial Intelligence API",
+        "owner_project_ID": "API-116"
+    },
+    {
+        "id": "API-116-003",
+        "api_name": "Recommendation System",
+        "description": "Generate recommendations based on user data.",
+        "api_method": "POST",
+        "owner_project": "Artificial Intelligence API",
+        "owner_project_ID": "API-116"
+    },
+    {
+        "id": "API-117-001",
+        "api_name": "Render VR Scene",
+        "description": "Render a virtual reality scene.",
+        "api_method": "POST",
+        "owner_project": "Virtual Reality API",
+        "owner_project_ID": "API-117"
+    },
+    {
+        "id": "API-117-002",
+        "api_name": "Track VR Movement",
+        "description": "Track user movement in a virtual reality environment.",
+        "api_method": "POST",
+        "owner_project": "Virtual Reality API",
+        "owner_project_ID": "API-117"
+    },
+    {
+        "id": "API-117-003",
+        "api_name": "VR Interaction",
+        "description": "Handle user interactions in a virtual reality environment.",
+        "api_method": "POST",
+        "owner_project": "Virtual Reality API",
+        "owner_project_ID": "API-117"
+    },
+    {
+        "id": "API-118-001",
+        "api_name": "Object Recognition",
+        "description": "Recognize objects in the real world using augmented reality.",
+        "api_method": "POST",
+        "owner_project": "Augmented Reality API",
+        "owner_project_ID": "API-118"
+    },
+    {
+        "id": "API-118-002",
+        "api_name": "Overlay Digital Content",
+        "description": "Overlay digital content on the real world using augmented reality.",
+        "api_method": "POST",
+        "owner_project": "Augmented Reality API",
+        "owner_project_ID": "API-118"
+    },
+    {
+        "id": "API-118-003",
+        "api_name": "Track AR Movement",
+        "description": "Track user movement in an augmented reality environment.",
+        "api_method": "POST",
+        "owner_project": "Augmented Reality API",
+        "owner_project_ID": "API-118"
+    },
+    {
+        "id": "API-119-001",
+        "api_name": "Execute Cryptocurrency Transaction",
+        "description": "Execute a transaction using cryptocurrency.",
+        "api_method": "POST",
+        "owner_project": "Blockchain API",
+        "owner_project_ID": "API-119"
+    },
+    {
+        "id": "API-119-002",
+        "api_name": "Create Smart Contract",
+        "description": "Create a new smart contract on the blockchain.",
+        "api_method": "POST",
+        "owner_project": "Blockchain API",
+        "owner_project_ID": "API-119"
+    },
+    {
+        "id": "API-119-003",
+        "api_name": "Store Data on Blockchain",
+        "description": "Store data securely on the blockchain.",
+        "api_method": "POST",
+        "owner_project": "Blockchain API",
+        "owner_project_ID": "API-119"
+    },
+    {
+        "id": "API-120-001",
+        "api_name": "Connect IoT Device",
+        "description": "Connect a new IoT device to the network.",
+        "api_method": "POST",
+        "owner_project": "Internet of Things (IoT) API",
+        "owner_project_ID": "API-120"
+    },
+    {
+        "id": "API-120-002",
+        "api_name": "Get IoT Device Status",
+        "description": "Retrieve the current status of a connected IoT device.",
+        "api_method": "GET",
+        "owner_project": "Internet of Things (IoT) API",
+        "owner_project_ID": "API-120"
+    },
+    {
+        "id": "API-120-003",
+        "api_name": "Control IoT Device",
+        "description": "Send control commands to an IoT device.",
+        "api_method": "POST",
+        "owner_project": "Internet of Things (IoT) API",
+        "owner_project_ID": "API-120"
+    },
+    {
+        "id": "API-121-001",
+        "api_name": "Process Digital Payment",
+        "description": "Process a digital payment transaction.",
+        "api_method": "POST",
+        "owner_project": "Fintech API",
+        "owner_project_ID": "API-121"
+    },
+    {
+        "id": "API-121-002",
+        "api_name": "Manage Crowdfunding Campaign",
+        "description": "Manage a crowdfunding campaign.",
+        "api_method": "POST",
+        "owner_project": "Fintech API",
+        "owner_project_ID": "API-121"
+    },
+    {
+        "id": "API-121-003",
+        "api_name": "Peer-to-Peer Lending",
+        "description": "Facilitate peer-to-peer lending transactions.",
+        "api_method": "POST",
+        "owner_project": "Fintech API",
+        "owner_project_ID": "API-121"
+    },
+    {
+        "id": "API-122-001",
+        "api_name": "Get Course Content",
+        "description": "Retrieve the content of a specific course.",
+        "api_method": "GET",
+        "owner_project": "E-learning API",
+        "owner_project_ID": "API-122"
+    },
+    {
+        "id": "API-122-002",
+        "api_name": "Submit Quiz",
+        "description": "Submit answers for a quiz.",
+        "api_method": "POST",
+        "owner_project": "E-learning API",
+        "owner_project_ID": "API-122"
+    },
+    {
+        "id": "API-122-003",
+        "api_name": "Get Certification",
+        "description": "Retrieve certification for completed courses.",
+        "api_method": "GET",
+        "owner_project": "E-learning API",
+        "owner_project_ID": "API-122"
+    },
+    {
+        "id": "API-123-001",
+        "api_name": "Threat Detection",
+        "description": "Detect potential cybersecurity threats.",
+        "api_method": "POST",
+        "owner_project": "Cybersecurity API",
+        "owner_project_ID": "API-123"
+    },
+    {
+        "id": "API-123-002",
+        "api_name": "Vulnerability Assessment",
+        "description": "Assess vulnerabilities in a system.",
+        "api_method": "POST",
+        "owner_project": "Cybersecurity API",
+        "owner_project_ID": "API-123"
+    },
+    {
+        "id": "API-123-003",
+        "api_name": "Incident Response",
+        "description": "Respond to cybersecurity incidents.",
+        "api_method": "POST",
+        "owner_project": "Cybersecurity API",
+        "owner_project_ID": "API-123"
+    },
+    {
+        "id": "API-124-001",
+        "api_name": "Track Inventory",
+        "description": "Track inventory levels in the supply chain.",
+        "api_method": "GET",
+        "owner_project": "Supply Chain API",
+        "owner_project_ID": "API-124"
+    },
+    {
+        "id": "API-124-002",
+        "api_name": "Order Fulfillment",
+        "description": "Manage order fulfillment processes.",
+        "api_method": "POST",
+        "owner_project": "Supply Chain API",
+        "owner_project_ID": "API-124"
+    },
+    {
+        "id": "API-124-003",
+        "api_name": "Manage Transportation",
+        "description": "Manage transportation logistics in the supply chain.",
+        "api_method": "POST",
+        "owner_project": "Supply Chain API",
+        "owner_project_ID": "API-124"
+    },
+    {
+        "id": "API-125-001",
+        "api_name": "Get Environmental Data",
+        "description": "Retrieve data related to environmental conditions.",
+        "api_method": "GET",
+        "owner_project": "Environmental API",
+        "owner_project_ID": "API-125"
+    },
+    {
+        "id": "API-125-002",
+        "api_name": "Get Sustainability Metrics",
+        "description": "Retrieve metrics related to sustainability efforts.",
+        "api_method": "GET",
+        "owner_project": "Environmental API",
+        "owner_project_ID": "API-125"
+    },
+    {
+        "id": "API-125-003",
+        "api_name": "Analyze Climate Change",
+        "description": "Analyze data related to climate change.",
+        "api_method": "POST",
+        "owner_project": "Environmental API",
+        "owner_project_ID": "API-125"
+    },
+    {
+        "id": "API-126-001",
+        "api_name": "Analyze Patient Outcomes",
+        "description": "Analyze data related to patient outcomes.",
+        "api_method": "POST",
+        "owner_project": "Healthcare Analytics API",
+        "owner_project_ID": "API-126"
+    },
+    {
+        "id": "API-126-002",
+        "api_name": "Analyze Medical Imaging",
+        "description": "Analyze medical imaging data.",
+        "api_method": "POST",
+        "owner_project": "Healthcare Analytics API",
+        "owner_project_ID": "API-126"
+    },
+    {
+        "id": "API-126-003",
+        "api_name": "Analyze Clinical Trials",
+        "description": "Analyze data from clinical trials.",
+        "api_method": "POST",
+        "owner_project": "Healthcare Analytics API",
+        "owner_project_ID": "API-126"
+    },
+    {
+        "id": "API-127-001",
+        "api_name": "Analyze Genomic Data",
+        "description": "Analyze genomic data for research purposes.",
+        "api_method": "POST",
+        "owner_project": "Bioinformatics API",
+        "owner_project_ID": "API-127"
+    },
+    {
+        "id": "API-127-002",
+        "api_name": "Predict Protein Structure",
+        "description": "Predict the structure of proteins.",
+        "api_method": "POST",
+        "owner_project": "Bioinformatics API",
+        "owner_project_ID": "API-127"
+    },
+    {
+        "id": "API-127-003",
+        "api_name": "Discover Drugs",
+        "description": "Assist in the discovery of new drugs.",
+        "api_method": "POST",
+        "owner_project": "Bioinformatics API",
+        "owner_project_ID": "API-127"
+    },
+    {
+        "id": "API-128-001",
+        "api_name": "Legal Research",
+        "description": "Conduct legal research using the API.",
+        "api_method": "GET",
+        "owner_project": "Legal API",
+        "owner_project_ID": "API-128"
+    },
+    {
+        "id": "API-128-002",
+        "api_name": "Manage Legal Documents",
+        "description": "Manage legal documents and files.",
+        "api_method": "POST",
+        "owner_project": "Legal API",
+        "owner_project_ID": "API-128"
+    },
+    {
+        "id": "API-128-003",
+        "api_name": "Ensure Compliance",
+        "description": "Ensure compliance with legal regulations.",
+        "api_method": "POST",
+        "owner_project": "Legal API",
+        "owner_project_ID": "API-128"
+    },
+    {
+        "id": "API-129-001",
+        "api_name": "Get Insurance Policies",
+        "description": "Retrieve information about insurance policies.",
+        "api_method": "GET",
+        "owner_project": "Insurance API",
+        "owner_project_ID": "API-129"
+    },
+    {
+        "id": "API-129-002",
+        "api_name": "Process Insurance Claims",
+        "description": "Process claims for insurance policies.",
+        "api_method": "POST",
+        "owner_project": "Insurance API",
+        "owner_project_ID": "API-129"
+    },
+    {
+        "id": "API-129-003",
+        "api_name": "Assess Risk",
+        "description": "Assess risk for insurance purposes.",
+        "api_method": "POST",
+        "owner_project": "Insurance API",
+        "owner_project_ID": "API-129"
+    },
+    {
+        "id": "API-130-001",
+        "api_name": "Get Public Transit Info",
+        "description": "Retrieve information about public transit options.",
+        "api_method": "GET",
+        "owner_project": "Transportation API",
+        "owner_project_ID": "API-130"
+    },
+    {
+        "id": "API-130-002",
+        "api_name": "Book Ride-Share",
+        "description": "Book a ride-share service.",
+        "api_method": "POST",
+        "owner_project": "Transportation API",
+        "owner_project_ID": "API-130"
+    },
+    {
+        "id": "API-130-003",
+        "api_name": "Track Delivery",
+        "description": "Track the status of a delivery.",
+        "api_method": "GET",
+        "owner_project": "Transportation API",
+        "owner_project_ID": "API-130"
+    }
+]
